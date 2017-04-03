@@ -1,0 +1,212 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/*what will be applied on all my elements within the html code*/
+body {
+	background-color: #CCC;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Create a first div which will contain the CV: we setup the width, margins, color, borders...*/
+#CV_page {
+	width: 780px;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #EEE;
+	padding: 40px;
+	border: 5px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px #666;
+	background-color: #FFF
+	/*border: 2px solid #DDD;*/
+}
+
+/*Increase the box containing the personal details + the photo*/
+#MainInfo {
+	height: 220px;
+}
+
+/*here we will play with the different element of the table giving the personal details*/
+#AboutMe {
+	font-size: 11px;
+	float: left;
+	margin-left: 5px;
+}
+
+#AboutMe th {
+	font-style: italic;
+	text-align: right;
+	font-weight: normal;
+}
+
+#AboutMe td {
+	padding-left: 10px;
+}
+
+#AboutMe td a {
+	text-decoration: none;
+	color: black;
+}
+
+#AboutMe td a:hover {
+	text-decoration: underline;
+	color: green;
+}
+
+/*the name apparing on top of the CV page*/
+#MyName {
+	font-variant: small-caps;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+/*define where the picture will appear + some animation*/
+#MyPicture {
+	float: right;
+	margin: 20px;
+}
+
+#MyPicture img {
+	border-radius: 50%;
+	opacity: 0.5;
+	filter: blur(0px);
+	transition: all 0.5s linear;
+}
+
+#MyPicture img:hover {
+	border-radius: 50%;
+	opacity: 1;
+	filter: blur(0px);
+	box-shadow: 5px 5px 5px #DDD;
+	transform: rotate(10deg) scale(1.1);
+}
+
+/*general properties for the boxes left versus right*/
+.Container {
+	margin-bottom: 0px;
+}
+
+.left_cont {
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: -15px;
+}
+
+.right_cont {
+	margin-left: 170px;
+	margin-top: 0px;
+	word-spacing: 0.15em;
+}
+
+/*header of the different section of the CV > assign another font-family*/
+h2 {
+	font-size: 28px;
+	font-family: 'Roboto', sans-serif;
+	color: #0349A8;
+	font-variant: small-caps;
+	border-bottom: 3px solid #00275C;
+	letter-spacing: 0.4em;
+}
+
+.time {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 11px;
+}
+
+#exp_left p {
+	padding-top: 5px;
+}
+
+.description {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.right_cont a {
+	text-decoration: none;
+	color: black;
+}
+
+.right_cont a:hover {
+	text-decoration: underline;
+	color: green;
+}
+
+/*specific properties for both table linked to languages*/
+#lcs_left{
+	margin-top: 0px;
+}
+
+#lcs_left td {
+	font-weight: normal;
+	padding: 2.5px;
+	font-size: 14px;
+}
+
+#lcs_left th {
+	text-align: left;
+}
+
+#lcs_right {
+	margin-left: 410px;
+}
+
+#lcs_right th {
+	text-align: left;
+}
+
+/*Could have been encapsulated into a tag footer > icons come from font-awesome*/
+#footer {
+	background-color: #000;
+	color: white;
+	height: 0px;
+	text-align: center;
+	width: 780px;
+	margin: auto;
+}
+
+.list-inline li{
+	display: inline;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.list-inline li a{
+	color: #555;
+}
+
+.list-inline li a:hover{
+	color: #0349A8;
+}
+
+/*design the nav bar*/
+nav {
+	border-bottom: 1px solid black;
+	width: 900px;
+	margin: auto;
+}
+
+nav li{
+	display: inline;
+	padding: 30px;
+	font-size: 12px;
+	text-align: center;
+}
+
+nav li a{
+	color: #555;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	color: #0349A8;
+	font-weight: bold;
+}
